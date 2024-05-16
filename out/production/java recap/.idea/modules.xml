@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ExceptionHandling/ExceptionHandling.iml" filepath="$PROJECT_DIR$/ExceptionHandling/ExceptionHandling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InnerClass/InnerClass.iml" filepath="$PROJECT_DIR$/InnerClass/InnerClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring core/Spring core.iml" filepath="$PROJECT_DIR$/Spring core/Spring core.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java recap.iml" filepath="$PROJECT_DIR$/.idea/java recap.iml" />
     </modules>
   </component>
