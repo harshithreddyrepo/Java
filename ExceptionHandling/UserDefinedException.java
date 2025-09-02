@@ -1,26 +1,17 @@
 package ExceptionHandling;
+class InvalidAgeException  extends Exception // class representing custom exception
+{ public InvalidAgeException (String str) {
+    super(str);// calling the constructor of parent Exception
 
-// class representing custom exception
-class InvalidAgeException  extends Exception
-{
-
-    public InvalidAgeException (String str)
-    {
-        // calling the constructor of parent Exception
-        super(str);
-    }
+  }
 }
-
-// class that uses custom exception InvalidAgeException
-public class UserDefinedException {
-
-    // method to check the age
-    static void validate(int age) throws InvalidAgeException {
+public class UserDefinedException  // class that uses custom exception InvalidAgeException
+{
+    static void validate(int age) throws InvalidAgeException// method to check the age
+    {
         try{
             if (age < 18) {
-
-                // throw an object of user defined exception
-                throw new InvalidAgeException( "age is not valid to vote");
+                throw new InvalidAgeException( "age is not valid to vote");// throw an object of user defined exception
             } else {
                 System.out.println("welcome to vote");
             }
@@ -29,19 +20,14 @@ public class UserDefinedException {
             System.out.println("WELCOME");
         }
     }
-
     // main method
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         try {
-            // calling the method
-            validate(13);
+            validate(13);// calling the method
         } catch (InvalidAgeException ex) {
             System.out.println("Caught the exception");
-
-            // printing the message from InvalidAgeException object
-            System.out.println("Exception occured: " + ex);
+            System.out.println("Exception occurred: " + ex);// printing the message from InvalidAgeException object
         }
-
         System.out.println("rest of the code...");
     }
 }

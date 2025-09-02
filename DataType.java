@@ -1,6 +1,9 @@
 // PRIMITIVE DATA TYPES:-
 public class DataType {
     public static void main(String[] args) {
+        int x=10;
+
+        System.out.println();
         System.out.println("The range of integer is from " + Integer.MIN_VALUE + " to " + Integer.MAX_VALUE);
         System.out.println("size of integer:" + Integer.BYTES);
         System.out.println();
